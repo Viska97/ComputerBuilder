@@ -19,13 +19,13 @@ namespace ComputerBuilder
 
         private void button2_Click(object sender, EventArgs e)
         {
-            File.Delete(GlobalVariables.apppath + @"\ComputerBuilderData\coockies.txt");
+            File.Delete(GlobalVariables.apppath + @"\coockies.txt");
             Application.Restart();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             SelectCityWindow scw = new SelectCityWindow(false);
             scw.ShowDialog();
         }
@@ -46,7 +46,7 @@ namespace ComputerBuilder
             YandexInfo yi = new YandexInfo();
             label1.Text =  yi.GetUserName();
             pictureBox1.Load(yi.GetUserAvatar());
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             label2.Text = manager.GetPrivateString("Main", "CityName");
         }
     }

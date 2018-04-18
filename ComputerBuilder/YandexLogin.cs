@@ -23,7 +23,7 @@ namespace ComputerBuilder
             ProgressChanged(1);
             test = yandex.cookies;
             Cookies cs = new Cookies();
-            cs.Write(test, GlobalVariables.apppath + @"\ComputerBuilderData\coockies.txt");
+            cs.Write(test, GlobalVariables.apppath + @"\coockies.txt");
             ProgressChanged(1);
             return true;
         }

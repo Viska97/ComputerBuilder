@@ -18,10 +18,10 @@ namespace ComputerBuilder
         public PricesLoader(string id)
         {
             string city = null;
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             city = manager.GetPrivateString("Main", "City");
             Cookies cs = new Cookies();
-            cks = cs.Read(GlobalVariables.apppath + @"\ComputerBuilderData\coockies.txt");
+            cks = cs.Read(GlobalVariables.apppath + @"\coockies.txt");
             var request = (HttpWebRequest)WebRequest.Create(String.Format(@"https://market.yandex.ru/product/{0}?productId={0}&=&lr={1}", id, city));
             request.UserAgent = "Chrome";
             request.CookieContainer = cks;

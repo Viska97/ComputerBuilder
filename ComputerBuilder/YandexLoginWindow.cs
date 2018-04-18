@@ -46,7 +46,7 @@ namespace ComputerBuilder
                 yandex.Authorize();
                 test = yandex.cookies;
                 Cookies cs = new Cookies();
-                cs.Write(test, GlobalVariables.apppath + @"\ComputerBuilderData\coockies.txt");
+                cs.Write(test, GlobalVariables.apppath + @"\coockies.txt");
                 YandexInfo yi = new YandexInfo();
                 mw.username.Text = yi.GetUserName();
                 mw.useravatar.Load(yi.GetUserAvatar());

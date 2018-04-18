@@ -49,7 +49,7 @@ namespace ComputerBuilder
 
         private void CheckLogin()
         {
-            if (File.Exists(GlobalVariables.apppath + @"\ComputerBuilderData\coockies.txt"))
+            if (File.Exists(GlobalVariables.apppath + @"\coockies.txt"))
             {
                 string username, useravatar;
                 YandexInfo yi = new YandexInfo();

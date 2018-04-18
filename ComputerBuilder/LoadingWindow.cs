@@ -42,7 +42,7 @@ namespace ComputerBuilder
             title = idinbase;
             SQLiteCommand command = new SQLiteCommand(String.Format("SELECT * FROM builds WHERE title='{0}'", idinbase), SqLiteWorker.connection);
             SQLiteDataReader reader = command.ExecuteReader();
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             city = manager.GetPrivateString("Main", "City");
             foreach (DbDataRecord record in reader)
             {

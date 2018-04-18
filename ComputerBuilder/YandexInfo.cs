@@ -18,7 +18,7 @@ namespace ComputerBuilder
             request = (HttpWebRequest)WebRequest.Create("https://passport.yandex.ru/passport?mode=auth");
             request.UserAgent = "Chrome";
             Cookies cs = new Cookies();
-            cooks = cs.Read(GlobalVariables.apppath + @"\ComputerBuilderData\coockies.txt");
+            cooks = cs.Read(GlobalVariables.apppath + @"\coockies.txt");
             request.CookieContainer = cooks;
             doc.OptionFixNestedTags = true;
             HttpWebResponse responce = (HttpWebResponse)request.GetResponse();

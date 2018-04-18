@@ -10,7 +10,7 @@ namespace ComputerBuilder
     {
         public SqlConnect()
         {
-            string sqlpath = GlobalVariables.apppath + @"\ComputerBuilderData\computerbuilder.db";
+            string sqlpath = GlobalVariables.apppath + @"\computerbuilder.db";
             SqLiteWorker.connection = new SQLiteConnection(string.Format("Data Source={0};", sqlpath));
             SqLiteWorker.connection.Open();
         }

@@ -108,7 +108,7 @@ namespace ComputerBuilder
         {
             int index = cities.IndexOf(city);
             string id = regionids[index];
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             manager.WritePrivateString("Main", "City" , id);
             manager.WritePrivateString("Main", "CityName", city);
         }
