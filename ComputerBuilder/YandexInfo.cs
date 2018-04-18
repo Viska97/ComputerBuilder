@@ -50,7 +50,7 @@ namespace ComputerBuilder
             avatarlink = doc.DocumentNode.SelectSingleNode("//body/div/div[1]/div[3]/div[1]/div[1]/div/span");
             if (avatarlink == null)
             {
-                useravatar = null;
+                useravatar = "http://avatars.mds.yandex.net/get-yapic/0/0-0/islands-200";
             }
             else
             {

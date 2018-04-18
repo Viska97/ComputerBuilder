@@ -23,7 +23,7 @@
   </system.data>
   <runtime>
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-         <probing privatePath="ComputerBuilderData" />
+         <probing privatePath="SubPath1;SubPath2" />
       </assemblyBinding>
    </runtime>
 </configuration>
