@@ -80,7 +80,7 @@ namespace ComputerBuilder
             try
             {
                 
-                SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+                SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
                 cityname = manager.GetPrivateString("Main", "City");
                 if (cityname == "null")
                 {
@@ -97,7 +97,7 @@ namespace ComputerBuilder
         private void CheckFirtsRun()
         {
             string check;
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             check = manager.GetPrivateString("Other", "FirstRun");
             if (check == "True")
             {
@@ -119,7 +119,7 @@ namespace ComputerBuilder
 
         private void MainWindow_Activated(object sender, EventArgs e)
         {
-            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\ComputerBuilderData\settings.ini");
+            SettingsReader manager = new SettingsReader(GlobalVariables.apppath + @"\settings.ini");
             string city = manager.GetPrivateString("Main", "CityName");
             label2.Text = city;
         }
