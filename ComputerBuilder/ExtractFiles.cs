@@ -13,7 +13,7 @@ namespace ComputerBuilder
             @"\EntityFramework.SqlServer.xml" , @"\EntityFramework.xml" , @"\HtmlAgilityPack.dll", @"\HtmlAgilityPack.xml",
             @"\System.Data.SQLite.dll" , @"\System.Data.SQLite.EF6.dll" , @"\System.Data.SQLite.Linq.dll" , @"\System.Data.SQLite.xml",
             @"\computerbuilder.db" , @"\settings.ini" , @"\eula.txt"};
-        private string[] ListFolders = new string[] { @"\ComputerBuilderData\x64", @"\ComputerBuilderData\x86" };
+        private string[] ListFolders = new string[] { @"\x64", @"\x86" };
         private string startuppath;
         public bool needrestart = false;
 
