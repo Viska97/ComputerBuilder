@@ -8,11 +8,11 @@ namespace ComputerBuilder
 {
     class ExtractFiles
     {
-        private string[] ListFiles = new string[] { @"\ComputerBuilderData\x64\SQLite.Interop.dll" ,
-            @"\ComputerBuilderData\x86\SQLite.Interop.dll" , @"\ComputerBuilderData\EntityFramework.dll" , @"\ComputerBuilderData\EntityFramework.SqlServer.dll" ,
-            @"\ComputerBuilderData\EntityFramework.SqlServer.xml" , @"\ComputerBuilderData\EntityFramework.xml" , @"\ComputerBuilderData\HtmlAgilityPack.dll", @"\ComputerBuilderData\HtmlAgilityPack.xml",
-            @"\ComputerBuilderData\System.Data.SQLite.dll" , @"\ComputerBuilderData\System.Data.SQLite.EF6.dll" , @"\ComputerBuilderData\System.Data.SQLite.Linq.dll" , @"\ComputerBuilderData\System.Data.SQLite.xml",
-            @"\ComputerBuilderData\computerbuilder.db" , @"\ComputerBuilder.exe.config" , @"\ComputerBuilderData\settings.ini" , @"\ComputerBuilderData\eula.txt"};
+        private string[] ListFiles = new string[] { @"\x64\SQLite.Interop.dll" ,
+            @"\x86\SQLite.Interop.dll" , @"\EntityFramework.dll" , @"\EntityFramework.SqlServer.dll" ,
+            @"\EntityFramework.SqlServer.xml" , @"\EntityFramework.xml" , @"\HtmlAgilityPack.dll", @"\HtmlAgilityPack.xml",
+            @"\System.Data.SQLite.dll" , @"\System.Data.SQLite.EF6.dll" , @"\System.Data.SQLite.Linq.dll" , @"\System.Data.SQLite.xml",
+            @"\computerbuilder.db" , @"\settings.ini" , @"\eula.txt"};
         private string[] ListFolders = new string[] { @"\ComputerBuilderData\x64", @"\ComputerBuilderData\x86" };
         private string startuppath;
         public bool needrestart = false;
@@ -89,12 +89,9 @@ namespace ComputerBuilder
                     fl = global::ComputerBuilder.Properties.Resources.computerbuilder;
                     break;
                 case 13:
-                    fl = global::ComputerBuilder.Properties.Resources.ComputerBuilder_exe_config;
-                    break;
-                case 14:
                     fl = global::ComputerBuilder.Properties.Resources.settingsini;
                     break;
-                case 15:
+                case 14:
                     fl = global::ComputerBuilder.Properties.Resources.eula;
                     break;
             }

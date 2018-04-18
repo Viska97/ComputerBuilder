@@ -23,7 +23,7 @@ namespace ComputerBuilder
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(GlobalVariables.apppath + @"\ComputerBuilderData\eula.txt");
+            System.Diagnostics.Process.Start(GlobalVariables.apppath + @"\eula.txt");
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
